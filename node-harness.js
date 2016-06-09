@@ -134,7 +134,7 @@ runTests = function () {
             + color('white', "%s"),
             val.replace(/\.js$/, '') + '.js'
           );
-          continue;
+          process.exit(1);
         }
         run = true;
         if (Tyrtle.util.isArray(tests)) {
